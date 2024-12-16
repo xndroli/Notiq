@@ -17,7 +17,7 @@ import { inviteUserToDocument, removeUserFromDocument } from "@/actions/actions"
 import { toast } from "sonner";
 import { Input } from "./ui/input";
 import { useUser } from "@clerk/nextjs";
-import { useOwner } from "@/lib/useOwner";
+import  useOwner  from "@/lib/useOwner";
 import { useRoom } from "@liveblocks/react/suspense";
 import { useCollection } from "react-firebase-hooks/firestore";
 import { collectionGroup, query, where } from "firebase/firestore";
