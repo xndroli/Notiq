@@ -30,9 +30,10 @@ function LiveCursorProvider({ children }: { children: React.ReactNode }) {
                     y={presence.cursor!.y}
                 />
             ))}
-
+            {myPresence && <p>User is present</p>}
             {children}
         </div>
     )
 };
+
 export default LiveCursorProvider;

@@ -9,7 +9,7 @@ import {
     DialogTitle,
     DialogTrigger,
 } from "@/components/ui/dialog";
-import { Input } from "./ui/input";
+// import { Input } from "./ui/input";
 import { Button } from "./ui/button";
 import { FormEvent, useState, useTransition } from "react";
 
@@ -79,6 +79,7 @@ function TranslateDocument({ doc }: { doc: Y.Doc }) {
                 const { translated_text } = await res.json();
 
                 setSummary(translated_text);
+                setQuestion(translated_text); // Update the question state variable
                 toast.success("Translation successful!", {
                     id,
                 })
