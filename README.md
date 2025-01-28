@@ -1,8 +1,102 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
+    <br />
+    <h3 align="center">Notiq ✨</h3>
+    <div>
+        [![Next.js](https://img.shields.io/badge/Next.js-14-black?logo=next.js)](https://nextjs.org/)
+        [![Liveblocks](https://img.shields.io/badge/Liveblocks-RealTime-blue)](https://liveblocks.io/)
+        [![Cloudflare Workers](https://img.shields.io/badge/Cloudflare-Workers-orange)](https://workers.cloudflare.com/)
+        [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+    </div>
+    <br />
+    <h4 align="center">Real-time Collaborative Editor Powered by AI</h4>
+    <br />
+</div>
 
-## Getting Started
+## 📋 <a name="table">Table of Contents</a>
 
-First, run the development server:
+1. 🪟 [Overview](#overview)
+2. 🧩 [Tech Stack](#tech-stack)
+3. 🚀 [Features](#features)
+4. 🤸 [Quick Start](#quick-start)
+5. 🔗 [Links](#links)
+
+## <a name="overview">🪟 Overview</a>
+
+A sleek rich text editor workspace which embraces real-time conflict-free collaboration, with chat-to-document and summary translation powered by OpenAI. 
+
+🌐 ![Notiq Demo](https://notiq-livid.vercel.app/)
+
+## <a name="tech-stack">🧩 Tech Stack</a>
+
+- **Frontend**: Next.js
+- **Styling**: Tailwind CSS
+- **UI Components**: Shadcn UI
+- **Backend**: Cloudflare, Hono
+- **Database**: Firebase Firestore
+- **Authentication**: Clerk
+- **Real-Time Collaboration**: Liveblocks
+- **AI Integration**: OpenAI
+- **Type Safety**: TypeScript
+- **Version-Control**: Git, GitHub
+
+## <a name="features">🚀 Features</a>
+
+- 🌐 **Real-Time Collaboration**: Conflict-free Workspace with others in real-time.
+- 🤖 **AI-Powered Assistance**: Leverage OpenAI to enhance your productivity with chat-to-document, summary translation, and more.
+- ✍️ **Rich Text Editing**: Create and format documents with ease using a rich text editor.
+- 🖱️ **Live Cursors**: See where your collaborators are working in real time with live presence cursors.
+- 🔐 **User Authentication**: Secure and seamless authentication with Clerk.
+- 🎨 **Responsive Design**: Built with Tailwind CSS and shadcn for a modern, responsive UI.
+- 🚀 **Scalable Backend**: Powered by Firebase Firestore for real-time database functionality.
+- ⚡ **Optimized Performance**: Deployed on Vercel and enhanced with Cloudflare for fast and reliable performance.
+
+## <a name="quick-start">🤸 Quick Start</a>
+
+Follow these steps to set up the project locally on your machine.
+
+## Prerequisites
+
+- Node.js (Latest LTS version recommended)
+- PNPM package manager or NPM/Yarn
+- Clerk account for authentication
+- Convex account for database
+- OpenAI/Anthropic API key for AI capabilities
+
+## Environment Variables
+
+Create a `.env.local` file in the root directory with the following variables:
+
+```env
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_key
+CLERK_SECRET_KEY=your_clerk_secret
+FIREBASE_API_KEY=your_firebase_key
+LIVEBLOCKS_SECRET_KEY=your_liveblocks_secret
+CLOUDFLARE_AI_TOKEN=your_cf_ai_token
+OPENAI_API_KEY=your_openai_key
+```
+
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/xndroli/notiq.git
+cd Notiq
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+# or
+bun install
+```
+
+3. Start the development server:
 
 ```bash
 npm run dev
@@ -14,23 +108,40 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Start the client:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run client
+# or
+yarn client
+# or
+pnpm client
+# or
+bun client
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Visit [http://localhost:3000](http://localhost:3000) in your browser to start using Notiq.
 
-## Learn More
+## Performance Optimizations
 
-To learn more about Next.js, take a look at the following resources:
+- Implemented prompt caching
+- Optimized token usage
+- Efficient streaming implementation
+- Smart context window management
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## <a name="links">🔗 Links</a>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Here is the list of all the resources used in the project:
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Node.JS](https://nodejs.org/)
+- [pnpm](https://pnpm.io/)
+- [Next.JS](https://nextjs.org/)
+- [Lucide React](https://lucide.dev/)
+- [Radix](https://www.radix-ui.com/icons)
+- [shadcn/ui](https://ui.shadcn.com/)
+- [Clerk ](https://https://clerk.com/)
+- [IBM's watsonx.ai Flows Engine](https://wxflows.ibm.stepzen.com/)
+- [LangChain](https://www.langchain.com/)
+- [Convex](https://www.convex.dev/)
+- [Anthropic](https://console.anthropic.com/dashboard)
+- [Vercel](https://vercel.com/)
